@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Rapid
+    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="/" class="scrollto"><span>TEXT EMOTION</span></a></h1>
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/home1">Home</a></li>
+		  <li><a href="/about">About</a></li>
+		  <li><a href="/notebook">Notebook</a></li>
+          <li><a href="/login">Signout</a></li>
+          
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2>Emotion detection using Machine and Deep Learning!</span></h2>
+          
+        </div>
+  
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="static/img/intro-img.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+	<h2 style="color:yellow;font-size:20;text-align: center;">Results For The Tweet</b></h2>
+	<div class="results">
+
+
+		
+    {% if prediction == 0%}
+    <h2 style="color:rgb(226, 27, 12) ; text-align:center" >EMOTION OF THE TEXT IS SADNESS</h2>
+    <br>
+    {% elif prediction == 1%}
+    <h2 style="color:blue; text-align:center">EMOTION OF THE TEXT IS JOY</h2>
+    <br>
+    {% elif prediction == 2%}
+    <h2 style="color:rgb(38, 233, 20); text-align:center">EMOTION OF THE TEXT IS LOVE</h2>
+    {% elif prediction == 3%}
+    <h2 style="color:rgb(20, 148, 233); text-align:center">EMOTION OF THE TEXT IS ANGER</h2>
+    {% elif prediction == 4%}
+    <h2 style="color:rgb(233, 20, 233); text-align:center">EMOTION OF THE TEXT IS FEAR</h2>
+    {% elif prediction == 5%}
+    <h2 style="color:rgb(194, 233, 20); text-align:center">EMOTION OF THE TEXT IS HAPPY</h2>
+    {% endif %}
+
+	</div>
+</div>
+
+</div>
+</section><!-- #services -->
+
+
+
+
+</main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+	<div class="container">
+		<div class="copyright">
+		  &copy; Copyright <strong>2022</strong>. All Rights Reserved
+		</div>
+		<div class="credits">
+		  <!--
+			All the links in the footer should remain intact.
+			You can delete the links only if you purchased the pro version.
+			Licensing information: https://bootstrapmade.com/license/
+			Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+		  -->
+		  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+		</div>
+	  </div>
+	</footer><!-- #footer -->
+  
+	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+	<!-- Uncomment below i you want to use a preloader -->
+	<!-- <div id="preloader"></div> -->
+  
+	<!-- JavaScript Libraries -->
+	<script src="static/lib/jquery/jquery.min.js"></script>
+	<script src="static/lib/jquery/jquery-migrate.min.js"></script>
+	<script src="static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="static/lib/easing/easing.min.js"></script>
+	<script src="static/lib/mobile-nav/mobile-nav.js"></script>
+	<script src="static/lib/wow/wow.min.js"></script>
+	<script src="static/lib/waypoints/waypoints.min.js"></script>
+	<script src="static/lib/counterup/counterup.min.js"></script>
+	<script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+	<script src="static/lib/isotope/isotope.pkgd.min.js"></script>
+	<script src="static/lib/lightbox/js/lightbox.min.js"></script>
+	<!-- Contact Form JavaScript File -->
+	<script src="static/contactform/contactform.js"></script>
+  
+	<!-- Template Main Javascript File -->
+	<script src="static/js/main.js"></script>
+  
+  </body>
+  </html>
+  
